@@ -15,7 +15,7 @@ public class CorsConfig {
         CorsConfiguration corsConfig = new CorsConfiguration();
         // Keep CORS configuration ONLY at the API Gateway to avoid duplicate headers.
         // Use explicit origin to prevent `Access-Control-Allow-Origin` conflicts.
-        corsConfig.setAllowedOrigins(Arrays.asList("http://localhost:4200"));
+        corsConfig.setAllowedOrigins(Arrays.asList("http://localhost:4200", "https://foodhub-frontend-livid.vercel.app"));
         corsConfig.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "PATCH"));
         corsConfig.setAllowedHeaders(Arrays.asList("*"));
         corsConfig.setAllowCredentials(true);
