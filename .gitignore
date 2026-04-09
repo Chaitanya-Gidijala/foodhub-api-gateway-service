@@ -12,3 +12,6 @@ target/
 .idea/
 *.iml
 .vscode/
+
+# Config secrets
+src/main/resources/application-dev.properties
